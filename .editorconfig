@@ -1,0 +1,30 @@
+# 최상위 폴더의 EditorConfig file을 사용하겠다는 설정
+# 작업중인 파일에 적용할 editorconfig를 찾기위해 해당 파일이 존재하는 루트에서부터 최상위까지 거슬러올라가며 찾는 작업을 하는데
+# 그 작업을 막아준다. 일반적으로 root directory에 이 파일을 생성하고 true로 지정해주면 된다.
+root = true
+
+# [*]는 루트 하위에 모든 파일들에 적용하겠다는 의미
+
+# Charset UTF-8 설정
+# 들여쓰기 설정
+# space 들여쓰기 크기 설정
+# tab 들여쓰기 크기 설정
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# End of line 설정
+# 아래 줄로 이동 하는 것이 Line Feed(LF)이고, 왼쪽 끝으로 밀어 주는 것이 Carrige Return(CR)이다.
+# window에서 사용하는게 crlf, 리눅스가 lf를 사용
+[*]
+end_of_line = lf
+
+# 행 끝의 공백을 제거하는 설정
+[*]
+trim_trailing_whitespace = true
+
+# 파일 끝에 개행
+[*]
+insert_final_newline = true
